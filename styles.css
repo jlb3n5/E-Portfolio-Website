@@ -11,6 +11,90 @@
 li{
     list-style-type: none;
 }
+
+p{
+    line-height: 1.5;
+    font-size:16px;
+}
+
+a{
+    text-decoration: none;
+}
+
+section{
+    background-color: rgb(245, 245, 245);
+}
+
+.click{
+    transition: all 300ms ease;
+}
+
+.click:hover{
+    transform: scale(1.1);
+}
+
+.click:active{
+    transform: scale(0.8);
+}
+
+
+.title{
+    font-size: 48px;
+    margin-bottom: 12px;
+    text-align: left;
+    line-height: 1;
+}
+
+.orange{
+    color: #f06449 !important;
+}
+
+/*
+
+Landing Page
+
+*/
+
+#landing-page{
+    min-height: 100vh;
+}
+
+.header{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 1000px;
+    padding: 0 30px;
+}
+
+.header__para {
+    font-size: 12px;
+    line-height: 2;
+    max-width: 450px;
+}
+
+.social__list {
+    margin-top: 16px;
+    display: flex;
+}
+
+.social__link{
+    background-color: #f06449;
+    color: white;
+    padding: 6px;
+    width: 20px;
+    height: 20px;
+    font-size: 9px;
+    margin-right: 12px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
 /*
 
 Navigation
@@ -24,6 +108,7 @@ nav{
     width: 100%;
     max-width: 1200px;
     margin: auto 0;
+    padding: 0 20px;
     height: 100px;
 }
 
@@ -42,7 +127,6 @@ nav{
 }
 
 .nav__link--anchor{
-    text-decoration: none;
     font-size: 16px;
     color: #242424;
     font-weight: 700;
