@@ -235,7 +235,7 @@ Landing Page
     bottom: 32px;
     right: 40px;
     z-index: 100;
-    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.28);
+    box-shadow: 0 12px 30px 0 rgb(0, 0, 0, 0.2);
   }
   
 .scroll{
@@ -622,3 +622,57 @@ footer{
 .footer__copyright {
     color: white;
 }
+
+/* Small phones, tablets, large smart phones*/
+@media (max-width: 768px){
+    .title{
+        font-size: 50px;
+    }
+
+    .header__para {
+        font-size: 15px;
+    }
+
+    .modal{
+        top: 0;
+        left: 0;
+        transform: none;
+        height: auto;
+        width: 100%;
+        flex-direction: column-reverse;
+    }
+
+    .modal__half{
+        width: 100%;
+    }
+}
+
+/* Small phones */
+@media (max-width:480px){
+    .title{
+        font-size: 35px;
+    }
+    .header__para{
+        font-size: 10px;
+    }
+    .nav__link:first-child{
+        display: none;
+    }
+    .project__description--para {
+        display: none;
+    }
+    .project__description{
+        left: 0;
+        padding: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .project__description--sub-title{
+        margin-bottom: 8px;
+    }
+    .modal__half{
+        padding: 40px;
+    }
+}
+
+
